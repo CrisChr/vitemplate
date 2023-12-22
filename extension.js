@@ -1,6 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-const {CSR, SSR, packageManagerOptions, useTsOptions, vscode} = require('./src/constant');
+const vscode = require('vscode')
+const {CSR, SSR, packageManagerOptions, useTsOptions} = require('./src/constant');
 const {_createQuickPicker, _createInputBox, _createFolder} = require('./src/create');
 const { _runTask} = require('./src/task');
 

@@ -1,6 +1,3 @@
-const vscode = require("vscode");
-
-const vsWindow = vscode.window;
 
 const packageManagerOptions = [
   { label: "pnpm", picked: false },
@@ -44,4 +41,4 @@ const SSR = [
   // },
 ];
 
-module.exports = {vscode, CSR, SSR, packageManagerOptions, useTsOptions, vsWindow };
+module.exports = {CSR, SSR, packageManagerOptions, useTsOptions};

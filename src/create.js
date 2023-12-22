@@ -1,18 +1,19 @@
-const {vscode, vsWindow, packageManagerOptions } = require("./constant");
+const vscode = require("vscode");
+const { packageManagerOptions } = require("./constant");
 
 /**
  * create input box
  */
 function _createInputBox() {
   return new Promise((resolve) => {
-    const inputBox = vsWindow.createInputBox();
+    const inputBox = vscode.window.createInputBox();
     inputBox.placeholder = "Input project name";
     inputBox.ignoreFocusOut = true;
     inputBox.show();
     inputBox.onDidAccept(() => {
       const value = inputBox.value;
       if (!value || !value.length) {
-        return vsWindow.showErrorMessage("Please input validate project name");
+        return vscode.window.showErrorMessage("Please input validate project name");
       }
       resolve(value);
       inputBox.dispose();
@@ -27,7 +28,7 @@ function _createInputBox() {
  * @param {(value: string) => void} [next]
  */
 function _createQuickPicker(items, placeHolder, next) {
-  const quickPick = vsWindow.createQuickPick();
+  const quickPick = vscode.window.createQuickPick();
   quickPick.items = items;
   quickPick.canSelectMany = false;
   quickPick.ignoreFocusOut = true;
@@ -35,7 +36,7 @@ function _createQuickPicker(items, placeHolder, next) {
   quickPick.show();
   quickPick.onDidAccept(() => {
     const value = quickPick.selectedItems[0].label;
-    if (!value.length) return vsWindow.showWarningMessage("Please select!");
+    if (!value.length) return vscode.window.showWarningMessage("Please select!");
     quickPick.dispose();
     next(value);
   });
@@ -44,7 +45,7 @@ function _createQuickPicker(items, placeHolder, next) {
 
 // select folder path
 async function _createFolder() {
-  return await vsWindow.showOpenDialog({
+  return await vscode.window.showOpenDialog({
     canSelectFiles: false,
     canSelectFolders: true,
     canSelectMany: false,

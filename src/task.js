@@ -1,4 +1,4 @@
-const {vscode, vsWindow } = require("./constant");
+const vscode = require("vscode");
 const { _createCommand } = require( "./create");
 
 /**
@@ -19,12 +19,12 @@ async function _runTask(params) {
             true
           );
         } else {
-          return vsWindow.showErrorMessage("Task is not terminate!");
+          return vscode.window.showErrorMessage("Task is not terminate!");
         }
       });
     },
     () => {
-      return vsWindow.showErrorMessage("Task run failed!");
+      return vscode.window.showErrorMessage("Task run failed!");
     }
   );
 }
