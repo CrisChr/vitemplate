@@ -4,8 +4,6 @@
 
 This extension provides a visualization step way to create project by using Vite to build. Support React, Vue, Svelte, Solid, Vanilla, Preact, Lit and Qwik, also Next, and support Typescript.
 
-\!\[feature X\]\(images/feature-x.png\)
-
 > Note: All the framework and Vite default using the latest version.
 
 ![launch](public/images/launch.jpg)
