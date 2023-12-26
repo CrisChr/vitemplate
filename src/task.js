@@ -38,6 +38,7 @@ async function _createTask(params) {
     return;
   }
   const executeCommand = await _createCommand(params);
+  console.log('executeCommand: ', executeCommand);
   return new vscode.Task(
     { type: "command" },
     2,

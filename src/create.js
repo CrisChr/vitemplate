@@ -75,7 +75,7 @@ async function _createCommand(params) {
     case "React":
     case "Svelte":
     case "Solid":
-    case "Venilla":
+    case "Vanilla":
     case "Preact":
     case "Lit":
     case "Qwik":
