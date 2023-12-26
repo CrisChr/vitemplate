@@ -1,7 +1,7 @@
 {
   "name": "vitemplate",
   "displayName": "vitemplate",
-  "description": "Generate web framework project template by Vite",
+  "description": "An visual Vite scaffold to generate web project template step by step.",
   "publisher": "BreakingRed",
   "version": "1.0.4",
   "engines": {
