@@ -2,7 +2,7 @@
 
 ## Features
 
-This extension provides a visualization step way to create project by using Vite to build. Support React, Vue, Svelte, Solid, Vanilla, Preact, Lit and Qwik, also Next, and support Typescript.
+This extension provides a visual step way to create web project template by using Vite scaffold. Support React, Vue, Svelte, Solid, Vanilla, Preact, Lit and Qwik, also Next, and support Typescript.
 
 > Note: All the framework and Vite default using the latest version.
 
