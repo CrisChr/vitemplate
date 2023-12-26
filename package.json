@@ -3,7 +3,7 @@
   "displayName": "vitemplate",
   "description": "Generate web framework project template by Vite",
   "publisher": "BreakingRed",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "vscode": "^1.85.0"
   },
