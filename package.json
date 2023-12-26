@@ -3,7 +3,7 @@
   "displayName": "vitemplate",
   "description": "An visual Vite scaffold to generate web project template step by step.",
   "publisher": "BreakingRed",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "engines": {
     "vscode": "^1.85.0"
   },
