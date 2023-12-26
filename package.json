@@ -2,11 +2,13 @@
   "name": "vitemplate",
   "displayName": "vitemplate",
   "description": "Generate web framework project template by Vite",
-  "version": "1.0.1",
+  "publisher": "BreakingRed",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
+    "Snippets",
     "Other"
   ],
   "activationEvents": [],
@@ -19,7 +21,7 @@
       }
     ]
   },
-  "icon": "public/logo.jpg",
+  "icon": "public/logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/CrisChr/vitemplate"
@@ -28,6 +30,8 @@
     "url": "https://github.com/CrisChr/vitemplate/issues"
   },
   "scripts": {
+    "package": "pnpm vsce package --no-dependencies",
+    "publish": "pnpm vsce publish --no-dependencies",
     "lint": "eslint .",
     "pretest": "pnpm run lint",
     "test": "vscode-test"

@@ -24,13 +24,3 @@ This extension provides a visualization step way to create project by using Vite
 
 **Cmd + Shift + P on Mac** or **Ctrl + Shift + P on Windows** to launch, then search with **ViTemplate**
 
-## Release Notes
-
-### 1.0.0
-
-Initial release
-
-### 1.0.1
-
-Add more framework support
-
