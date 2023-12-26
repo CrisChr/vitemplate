@@ -2,7 +2,7 @@
   "name": "vitemplate",
   "displayName": "vitemplate",
   "description": "Generate web framework project template by Vite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -40,5 +40,8 @@
     "@vscode/test-electron": "^2.3.8",
     "eslint": "^8.56.0",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "vsce": "^2.15.0"
   }
 }

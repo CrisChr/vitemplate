@@ -53,7 +53,7 @@ async function _createFolder() {
   });
 }
 
-/** get install command (React, Vue, Svelte, Solid, Next, Nuxt)
+/** get install command (React, Vue, Svelte, Solid, Next)
  * @param {{ framework: string; useTs?: string; packageManager?: string; projectName: string; path: string; }} params
  */
 async function _createCommand(params) {
@@ -67,14 +67,18 @@ async function _createCommand(params) {
           packageManagerOptions.find((pk) => pk.label === packageManager).label
         }`
       );
-    case "Nuxt":
-      return new vscode.ShellExecution(
-        `cd ${path} && pnpm dlx nuxi@latest init ${projectName}`
-      );
+    // case "Nuxt":
+    //   return new vscode.ShellExecution(
+    //     `cd ${path} && pnpm dlx nuxi@latest init ${projectName}`
+    //   );
     case "Vue":
     case "React":
     case "Svelte":
     case "Solid":
+    case "Venilla":
+    case "Preact":
+    case "Lit":
+    case "Qwik":
       return new vscode.ShellExecution(
         `cd ${path} && ${packageManager} create vite ${projectName} --template ${framework.toLowerCase()}${
           useTs === "Yes" ? "-ts" : ""

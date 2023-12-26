@@ -28,6 +28,22 @@ const CSR = [
     label: "Solid",
     picked: false,
   },
+  {
+    label: "Vanilla",
+    picked: false
+  },
+  {
+    label: "Preact",
+    picked: false
+  },
+  {
+    label: "Lit",
+    picked: false
+  },
+  {
+    label: "Qwik",
+    picked: false
+  }
 ];
 
 const SSR = [
