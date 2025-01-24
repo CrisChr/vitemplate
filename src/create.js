@@ -60,8 +60,17 @@ async function _createCommand(params) {
   const { framework, path, packageManager, projectName, useTs } = params;
   switch (framework) {
     case "Next":
+      if(packageManager === 'bun'){
+        return new vscode.ShellExecution(
+          `cd ${path} && bunx create-next-app@latest ${projectName} ${
+            useTs === "Yes" ? "--ts" : "--js"
+          } --use-${
+          packageManagerOptions.find((pk) => pk.label === packageManager).label
+        }`
+        );
+      }
       return new vscode.ShellExecution(
-        `cd ${path} && create-next-app ${projectName} ${
+        `cd ${path} && create-next-app@latest ${projectName} ${
           useTs === "Yes" ? "--ts" : "--js"
         } --use-${
           packageManagerOptions.find((pk) => pk.label === packageManager).label

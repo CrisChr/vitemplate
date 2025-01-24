@@ -3,6 +3,7 @@ const packageManagerOptions = [
   { label: "pnpm", picked: false },
   { label: "yarn", picked: false },
   { label: "npm", picked: false },
+  { label: "bun", picked: false },
 ];
 
 const useTsOptions = [
