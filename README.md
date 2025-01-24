@@ -1,9 +1,10 @@
 [![Version](https://badgen.net/vs-marketplace/v/BreakingRed.vitemplate)](https://marketplace.visualstudio.com/items?itemName=BreakingRed.vitemplate) [![Installed](https://badgen.net/vs-marketplace/i/BreakingRed.vitemplate)](https://marketplace.visualstudio.com/items?itemName=BreakingRed.vitemplate)
 [![Dowload](https://badgen.net/vs-marketplace/d/BreakingRed.vitemplate)](https://marketplace.visualstudio.com/items?itemName=BreakingRed.vitemplate)
+[![GitHub](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/CrisChr/vitemplate)
 
 ## Features
 
-This extension provides a visual step way to create web project template by using Vite scaffold. Support React, Vue, Svelte, Solid, Vanilla, Preact, Lit and Qwik, also Next, and support Typescript.
+This extension provides a way to create project template by using Vite scaffold step by step. Support React, Vue, Svelte, Solid, Vanilla, Preact, Lit and Qwik, also Next (not use Vite but Next official command script).
 
 > Note: All the framework and Vite default using the latest version.
 
@@ -19,7 +20,7 @@ This extension provides a visual step way to create web project template by usin
 
 ## Requirements
 
-- Node version > 18
+- Node version > 18 or > 20
 
 ## How to use
 
